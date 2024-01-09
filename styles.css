@@ -1,11 +1,11 @@
 .footer {
-  background-color: #f8f9fa;
+  background-color: lightblue;
   padding: 20px 0;
-  color: #6c757d;
+  color: rgb(132, 202, 225);
 }
 
 .footer-divider {
-  border-top: 1px solid #e9ecef;
+  border-top: 1px solid #85bdf5;
   margin-bottom: 20px;
 }
 
