@@ -1,26 +1,141 @@
+body {
+  font-family: "Josefin Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.navbar {
+  background-color: #add8e6;
+  font-size: 25px;
+}
+
+.navbar-nav {
+  width: 100%;
+  justify-content: space-around;
+}
+
+.navbar-nav .nav-item {
+  text-align: center;
+}
+
+.navbar-nav .nav-link {
+  display: block;
+  padding: 8px 16px;
+}
+
+.navbar-toggler {
+  order: -1;
+}
+
+.navbar-nav .btn {
+  display: flex;
+  align-items: center;
+}
+
+.hero-desc {
+  color: #454545;
+}
+
+.header-section {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.header-section h1 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.header-section p {
+  font-size: 16px;
+  color: #6c757d;
+}
+
+.search-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 20px 0;
+}
+
+#locationInput {
+  padding: 10px 15px;
+  width: 50%;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  #locationInput {
+    width: 80%;
+  }
+}
+
+#searchButton {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+#searchButton:hover {
+  background-color: #0056b3;
+}
+
 .footer {
-  background-color: lightblue;
-  padding: 20px 0;
-  color: rgb(132, 202, 225);
+  background-color: #add8e6;
+  padding: 40px 0;
+  color: #333;
+  text-align: center;
+  clear: both;
 }
 
 .footer-divider {
   border-top: 1px solid #85bdf5;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .footer-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .footer-section {
-  flex: 1;
-  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .footer-section {
+    align-items: flex-start;
+  }
 }
 
 .footer-section h3 {
@@ -29,32 +144,36 @@
 }
 
 .footer-section a {
-  display: block;
-  color: inherit;
+  color: #000;
   text-decoration: none;
   margin-bottom: 10px;
 }
 
-.footer-section a:hover {
-  text-decoration: underline;
-}
-
 .social-icons {
-  list-style: none;
-  padding: 0;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  height: 15px; /* This will maintain the aspect ratio of the icons */
+  margin: 0 10px; /* Optional: Adjusts spacing around each icon */
 }
 
 .social-icons li {
-  display: inline-block;
-  margin-right: 10px;
+  margin: 0 10px;
 }
 
-.social-icon {
-  width: 32px;
-  height: auto;
+.app-stores {
+  display: flex;
+  justify-content: center;
 }
 
 .app-stores img {
-  max-width: 150px;
-  margin-right: 10px;
+  width: 120px;
+  margin: 0 5px;
+}
+
+/* Additional Hover Effects */
+.footer-section a:hover,
+.social-icons li:hover,
+.app-stores img:hover {
+  opacity: 0.8;
 }
