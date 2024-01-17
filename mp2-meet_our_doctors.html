@@ -12,13 +12,13 @@
     <link rel="stylesheet" href="CSS files/CSS-navbar&fonts.css" />
     <link rel="stylesheet" href="CSS files/CSS-Darkmode.css" />
     <script src="JS files/darkmode.js"></script>
-    <title>Vitality book-Meet Our Doctors</title>
+    <title>Meet Our Doctors</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg sticky-top">
       <div class="container-fluid">
         <!-- Logo -->
-        <a class="navbar-brand" href="mp2-home.html">
+        <a class="navbar-brand" href="index.html">
           <img
             src="img/vit_book_logo.png"
             alt="Your Logo"
@@ -55,18 +55,27 @@
                 >Medical Services</a
               >
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Primary Care</a></li>
-                <li><a class="dropdown-item" href="#">Cancer Care</a></li>
-                <li><a class="dropdown-item" href="#">Neurosciences</a></li>
                 <li>
-                  <a class="dropdown-item" href="#">More Health Services</a>
+                  <a class="dropdown-item" href="primary_services.html"
+                    >Primary Care</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="cancer_care.html"
+                    >Cancer Care</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="neurosciences.html"
+                    >Neurosciences</a
+                  >
                 </li>
               </ul>
             </li>
 
             <!-- About link -->
             <li class="nav-item">
-              <a class="nav-link" href="#">About us</a>
+              <a class="nav-link" href="about.html">About us</a>
             </li>
           </ul>
 
@@ -103,5 +112,67 @@
         </div>
       </div>
     </div>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+      <hr class="footer-divider" />
+      <!-- Divider -->
+
+      <div class="footer-container">
+        <!-- Section 1 -->
+        <div class="footer-section">
+          <h3>About Us</h3>
+          <a href="#">Our Company</a>
+          <a href="#">Our Team</a>
+          <a href="#">Careers</a>
+        </div>
+
+        <!-- Section 2 -->
+        <div class="footer-section">
+          <h3>Learn More</h3>
+          <a href="#">FAQ</a>
+          <a href="#">Help Center</a>
+          <a href="#">Support</a>
+        </div>
+
+        <!-- Section 3 -->
+        <div class="footer-section">
+          <h3>Connect With Us</h3>
+          <ul class="social-icons">
+            <li>
+              <a href="#" aria-label="Follow us on Facebook">
+                <img
+                  src="img/img/fb_logo.png"
+                  alt="Facebook icon"
+                  class="social-icons"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="Follow us on Twitter"
+                ><img
+                  src="img/img/x_logo.webp"
+                  alt="Twitter icon"
+                  class="social-icons"
+              /></a>
+            </li>
+            <li>
+              <a href="#" aria-label="Follow us on Instagram"
+                ><img
+                  src="img/img/instagram_logo.png"
+                  alt="Instagram icon"
+                  class="social-icons"
+              /></a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- App Store Links -->
+        <div class="app-stores">
+          <img src="img/img/app_store.png" alt="App Store" />
+          <img src="img/img/google_play.png" alt="Google Play" />
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

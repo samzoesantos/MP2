@@ -10,17 +10,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    <title>Vitality book-Home</title>
+    <title>Home</title>
     <link rel="stylesheet" href="CSS files/CSS-navbar&fonts.css" />
-    <link rel="stylesheet" href="CSS files/CSS-Darkmode.css" />
     <link rel="stylesheet" href="CSS files/CSS-Home.css" />
+    <link rel="stylesheet" href="CSS files/CSS-Darkmode.css" />
     <script src="JS files/darkmode.js"></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg sticky-top">
       <div class="container-fluid">
         <!-- Logo -->
-        <a class="navbar-brand" href="mp2-home.html">
+        <a class="navbar-brand" href="index.html">
           <img
             src="img/vit_book_logo.png"
             alt="Your Logo"
@@ -56,18 +56,27 @@
                 >Medical Services</a
               >
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Primary Care</a></li>
-                <li><a class="dropdown-item" href="#">Cancer Care</a></li>
-                <li><a class="dropdown-item" href="#">Neurosciences</a></li>
                 <li>
-                  <a class="dropdown-item" href="#">More Health Services</a>
+                  <a class="dropdown-item" href="primary_services.html"
+                    >Primary Care</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="cancer_care.html"
+                    >Cancer Care</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="neurosciences.html"
+                    >Neurosciences</a
+                  >
                 </li>
               </ul>
             </li>
 
             <!-- About link -->
             <li class="nav-item">
-              <a class="nav-link" href="#">About us</a>
+              <a class="nav-link" href="about.html">About us</a>
             </li>
           </ul>
 
@@ -189,7 +198,9 @@
           online healthcare provider to date, From the common cold to cancer we
           have a medical professional who can help you!
           <div>
-            <a href="#" class="btn btn-primary mt-5 fs-4">Learn More</a>
+            <a href="about.html" class="btn btn-primary mt-5 fs-4"
+              >Learn More</a
+            >
           </div>
         </div>
       </div>
@@ -230,7 +241,7 @@
         Helping you find the best online medical care. Get help from our medical
         professionals all from the comfort of your home.
       </p>
-      <!-- Small logos to describe the service -->
+
       <div class="d-flex justify-content-around mt-5">
         <div class="text-center">
           <img
@@ -259,5 +270,66 @@
         </div>
       </div>
     </div>
+
+    <footer class="footer mt-4">
+      <hr class="footer-divider" />
+      <!-- Divider -->
+
+      <div class="footer-container">
+        <!-- Section 1 -->
+        <div class="footer-section">
+          <h3>About Us</h3>
+          <a href="#">Our Company</a>
+          <a href="#">Our Team</a>
+          <a href="#">Careers</a>
+        </div>
+
+        <!-- Section 2 -->
+        <div class="footer-section">
+          <h3>Learn More</h3>
+          <a href="#">FAQ</a>
+          <a href="#">Help Center</a>
+          <a href="#">Support</a>
+        </div>
+
+        <!-- Section 3 -->
+        <div class="footer-section">
+          <h3>Connect With Us</h3>
+          <ul class="social-icons">
+            <li>
+              <a href="#" aria-label="Follow us on Facebook">
+                <img
+                  src="img/img/fb_logo.png"
+                  alt="Facebook icon"
+                  class="social-icons"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="Follow us on Twitter"
+                ><img
+                  src="img/img/x_logo.webp"
+                  alt="Twitter icon"
+                  class="social-icons"
+              /></a>
+            </li>
+            <li>
+              <a href="#" aria-label="Follow us on Instagram"
+                ><img
+                  src="img/img/instagram_logo.png"
+                  alt="Instagram icon"
+                  class="social-icons"
+              /></a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- App Store Links -->
+        <div class="app-stores">
+          <img src="img/img/app_store.png" alt="App Store" />
+          <img src="img/img/google_play.png" alt="Google Play" />
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

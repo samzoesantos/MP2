@@ -10,7 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    <title>Vitality book-Home</title>
+    <title>Appointment - Pending</title>
     <link rel="stylesheet" href="CSS files/CSS-navbar&fonts.css" />
     <link rel="stylesheet" href="CSS files/CSS-Darkmode.css" />
     <link rel="stylesheet" href="CSS files/CSS-Home.css" />
@@ -20,7 +20,7 @@
     <nav class="navbar navbar-expand-lg sticky-top">
       <div class="container-fluid">
         <!-- Logo -->
-        <a class="navbar-brand" href="mp2-home.html">
+        <a class="navbar-brand" href="index.html">
           <img
             src="img/vit_book_logo.png"
             alt="Your Logo"
@@ -56,18 +56,27 @@
                 >Medical Services</a
               >
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Primary Care</a></li>
-                <li><a class="dropdown-item" href="#">Cancer Care</a></li>
-                <li><a class="dropdown-item" href="#">Neurosciences</a></li>
                 <li>
-                  <a class="dropdown-item" href="#">More Health Services</a>
+                  <a class="dropdown-item" href="primary_services.html"
+                    >Primary Care</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="cancer_care.html"
+                    >Cancer Care</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="neurosciences.html"
+                    >Neurosciences</a
+                  >
                 </li>
               </ul>
             </li>
 
             <!-- About link -->
             <li class="nav-item">
-              <a class="nav-link" href="#">About us</a>
+              <a class="nav-link" href="about.html">About us</a>
             </li>
           </ul>
 
@@ -81,183 +90,88 @@
 
     <!-- END OF NAVBAR -->
 
-    <!-- START OF HERO SECTION -->
-
-    <!-- carousel hero section -->
-
-    <div
-      id="site-hero"
-      class="carousel slide"
-      data-bs-ride="carousel"
-      data-bs-interval="5000"
-      id="hero-images"
-    >
-      <div class="carousel-indicators">
-        <button
-          data-bs-target="#site-hero"
-          data-bs-slide-to="0"
-          class="active"
-        ></button>
-        <button data-bs-target="#site-hero" data-bs-slide-to="1"></button>
-        <button data-bs-target="#site-hero" data-bs-slide-to="2"></button>
-      </div>
-
-      <!-- Carousel images section -->
-
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img
-            src="img/online-consultation.avif"
-            alt="online consultation"
-            class="d-block w-100"
-          />
-          <div class="carousel-caption d-none d-md-block">
-            <h1 class="hero-desc">24/7 consultations</h1>
-            <p class="hero-desc">
-              We offer 24/7 medical support for remote patients
-            </p>
-            <button class="btn btn-primary" href="mp2-book_appointment.html">
-              Book and Appointment
-            </button>
-          </div>
-        </div>
-
-        <div class="carousel-item">
-          <img
-            src="img/online-prescription.webp"
-            alt="online-prescription"
-            class="d-block w-100"
-          />
-          <div class="carousel-caption d-none d-md-block">
-            <h1 class="hero-desc">Online Prescriptions</h1>
-            <p class="hero-desc">
-              We give out online prescriptions to our clients
-            </p>
-            <button class="btn btn-primary" href="mp2-book_appointment.html">
-              Book and Appointment
-            </button>
-          </div>
-        </div>
-
-        <div class="carousel-item">
-          <img
-            src="img/online-consultation-2.jpg"
-            alt="online-consultation"
-            class="d-block w-100"
-          />
-          <div class="carousel-caption d-none d-md-block">
-            <h1 class="hero-desc">100% Online consultations</h1>
-            <p class="hero-desc">
-              We offer online consultations with our medical professionals
-            </p>
-            <button class="btn btn-primary" href="mp2-book_appointment.html">
-              Book and Appointment
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Hero Section Control buttons -->
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#vitality-hero"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon"></span>
-      </button>
-
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#vitality-hero"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon"></span>
-      </button>
-    </div>
-
-    <!-- END OF HERO SECTION -->
-
-    <div class="container-fluid mt-5">
+    <h1 class="display-1 text-center">
+      Thank you for setting up an appointment with us!
+    </h1>
+    <p class="fs-2 text-center">
+      Please check your email from time to time as we will be contacting you via
+      email regarding details about consulting with one of our specialists.
+    </p>
+    <p class="fs-3 text-center">
+      Please click <a href="index.html">here</a> to go back to home page.
+    </p>
+    <div class="container text-center">
       <div class="row">
-        <div class="col-lg-4 max-height-200">
-          <img src="img/laptop.jpg" alt="laptop" class="img-fluid rounded-4" />
-        </div>
-        <div class="col-lg-8 fs-4">
-          Here at Vitality Book we pride ourselves with being the number 1
-          online healthcare provider to date, From the common cold to cancer we
-          have a medical professional who can help you!
-          <div>
-            <a href="#" class="btn btn-primary mt-5 fs-4">Learn More</a>
-          </div>
+        <div class="col-lg-6 offset-lg-3 mt-5">
+          <img
+            src="img/waiting-room.avif"
+            alt="Vit book Logo"
+            class="img-fluid mb-4"
+          />
         </div>
       </div>
     </div>
 
-    <div class="container-fluid mt-5">
-      <div class="row">
-        <div class="col-lg-4 max-height-200">
-          <img
-            src="img/doctor_team.avif"
-            alt="doctors"
-            class="img-fluid rounded-4"
-          />
-        </div>
-        <div class="col-lg-8 fs-4">
-          Here at Vitality Book we have a wide array of medical proffesionals to
-          help you with any online medical assistance you need, so don't
-          hesitate to book an appointment now!
-          <div>
-            <a
-              href="mp2-book_appointment.html"
-              class="btn btn-primary mt-5 fs-4"
-              >Book an appointment</a
-            >
-          </div>
-        </div>
-      </div>
-    </div>
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+      <hr class="footer-divider" />
+      <!-- Divider -->
 
-    <div class="container-fluid mt-5 ml-4 mr-4 text-center service">
-      <img
-        src="img/vit_book_logo.png"
-        alt="vitality book logo"
-        class="service-logo"
-      />
-      <h1 class="font-weight-bold">Our mission</h1>
-      <p>
-        Helping you find the best online medical care. Get help from our medical
-        professionals all from the comfort of your home.
-      </p>
-      <!-- Small logos to describe the service -->
-      <div class="d-flex justify-content-around mt-5">
-        <div class="text-center">
-          <img
-            src="img/stetoscope.png"
-            alt="stetoscope"
-            class="service-logo-1"
-          />
-          <p>
-            Ensuring we have the right medical professionals to meet your needs
-            at Vitality Book.
-          </p>
+      <div class="footer-container">
+        <!-- Section 1 -->
+        <div class="footer-section">
+          <h3>About Us</h3>
+          <a href="#">Our Company</a>
+          <a href="#">Our Team</a>
+          <a href="#">Careers</a>
         </div>
-        <div class="text-center">
-          <img src="img/clock.png" alt="clock" class="service-logo-1" />
-          <p>
-            Illness has no breaks, and neither do we! Open 24/7 for your
-            healthcare needs.
-          </p>
+
+        <!-- Section 2 -->
+        <div class="footer-section">
+          <h3>Learn More</h3>
+          <a href="#">FAQ</a>
+          <a href="#">Help Center</a>
+          <a href="#">Support</a>
         </div>
-        <div class="text-center">
-          <img src="img/checklist.png" alt="checklist" class="service-logo-1" />
-          <p>
-            Simplified booking and stress-free appointments, enhancing your
-            seamless healthcare journey.
-          </p>
+
+        <!-- Section 3 -->
+        <div class="footer-section">
+          <h3>Connect With Us</h3>
+          <ul class="social-icons">
+            <li>
+              <a href="#" aria-label="Follow us on Facebook">
+                <img
+                  src="img/img/fb_logo.png"
+                  alt="Facebook icon"
+                  class="social-icons"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="Follow us on Twitter"
+                ><img
+                  src="img/img/x_logo.webp"
+                  alt="Twitter icon"
+                  class="social-icons"
+              /></a>
+            </li>
+            <li>
+              <a href="#" aria-label="Follow us on Instagram"
+                ><img
+                  src="img/img/instagram_logo.png"
+                  alt="Instagram icon"
+                  class="social-icons"
+              /></a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- App Store Links -->
+        <div class="app-stores">
+          <img src="img/img/app_store.png" alt="App Store" />
+          <img src="img/img/google_play.png" alt="Google Play" />
         </div>
       </div>
-    </div>
+    </footer>
   </body>
 </html>

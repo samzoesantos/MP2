@@ -45,3 +45,96 @@ body {
 .hero-desc {
   color: #454545;
 }
+
+.footer {
+  background: linear-gradient(
+    to right,
+    #1477d2,
+    #1a8ae5,
+    #1e97f3,
+    #41a7f5,
+    #64b7f6
+  );
+  padding: 40px 0;
+  color: #333;
+  text-align: center;
+  clear: both;
+}
+
+.footer-divider {
+  border-top: 1px solid #85bdf5;
+  margin-bottom: 30px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  @media (max-width: 768px) {
+    .navbar-nav .nav-link,
+    .navbar-nav .dropdown-menu {
+      white-space: normal;
+    }
+  }
+  .footer-section {
+    align-items: flex-start;
+  }
+}
+
+.footer-section h3 {
+  color: #343a40;
+  margin-bottom: 15px;
+}
+
+.footer-section a {
+  color: #000;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  height: 15px;
+  margin: 0 10px;
+}
+
+.social-icons li {
+  margin: 0 10px;
+}
+
+.app-stores {
+  display: flex;
+  justify-content: center;
+}
+
+.app-stores img {
+  width: 120px;
+  margin: 0 5px;
+}
+
+/* Additional Hover Effects */
+.footer-section a:hover,
+.social-icons li:hover,
+.app-stores img:hover {
+  opacity: 0.8;
+}
