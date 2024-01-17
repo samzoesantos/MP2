@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="CSS files/CSS-navbar&fonts.css" />
     <link rel="stylesheet" href="CSS files/CSS-Darkmode.css" />
     <script src="JS files/darkmode.js"></script>
-    <title>Vitality book-Meet Our Doctors</title>
+    <title>Vitality Book-Book an Appointment</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg sticky-top">
@@ -79,7 +79,6 @@
     </nav>
 
     <!-- END OF NAVBAR -->
-
     <div class="container text-center">
       <div class="row">
         <div class="col-lg-6 offset-lg-3 mt-5">
@@ -88,18 +87,70 @@
             alt="Vit book Logo"
             class="img-fluid mb-4"
           />
-          <p class="fs-2">
-            Here at Vitality book we have a wide array of medical professionals
-            to suit every online consultation needs!
+          <h2 class="mb-4">Book an Appointment</h2>
+          <p>
+            Book an appointment with us now and we will contact you via email
+            within the day!
           </p>
-        </div>
-      </div>
-    </div>
 
-    <div class="container-fluid text-center">
-      <div class="row">
-        <div class="col-lg-12">
-          <button class="btn btn-primary">See Full List of Doctors</button>
+          <form>
+            <div class="mb-3">
+              <label for="firstName" class="form-label">First Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="firstName"
+                name="firstName"
+                required
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="lastName" class="form-label">Last Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="lastName"
+                name="lastName"
+                required
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">Email Address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                required
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="symptoms" class="form-label"
+                >Type of Symptoms (Describe in detail)</label
+              >
+              <textarea class="form-control" rows="5" cols="50"></textarea>
+            </div>
+
+            <div class="mb-3">
+              <label for="symptomsDuration" class="form-label"
+                >How long have you had these symptoms?</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="symptomsDuration"
+                name="symptomsDuration"
+                required
+              />
+            </div>
+
+            <a href="mp2-appointement-pending.html" class="btn btn-primary">
+              Submit
+            </a>
+          </form>
         </div>
       </div>
     </div>

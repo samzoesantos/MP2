@@ -1,0 +1,14 @@
+.service {
+  background-image: url(../img/congrats.webp);
+  background-size: cover;
+}
+
+.service-logo {
+  max-width: 150px;
+  height: auto;
+}
+
+.service-logo-1 {
+  max-width: 100px;
+  max-height: 100px;
+}
