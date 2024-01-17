@@ -9,17 +9,20 @@
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="styles.css" />
 
-    <title>Document</title>
+    <title>Vitality book-Home</title>
+    <link rel="stylesheet" href="CSS files/CSS-navbar&fonts.css" />
+    <link rel="stylesheet" href="CSS files/CSS-Darkmode.css" />
+    <link rel="stylesheet" href="CSS files/CSS-Home.css" />
+    <script src="JS files/darkmode.js"></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg sticky-top">
       <div class="container-fluid">
         <!-- Logo -->
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="mp2-home.html">
           <img
-            src="img/vitality_book.png"
+            src="img/vit_book_logo.png"
             alt="Your Logo"
             height="130px"
             class="d-inline-block align-top"
@@ -35,26 +38,16 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-
-        <!-- Hamburger Icon for responsiveness -->
+        <!-- Meet our doctors link -->
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
-            <!-- Dropdown 1 -->
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                role="button"
-                data-bs-toggle="dropdown"
-                >Find Care</a
+            <li class="nav-item">
+              <a class="nav-link" href="mp2-meet_our_doctors.html"
+                >Meet our Doctors</a
               >
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Find a Provider</a></li>
-                <li><a class="dropdown-item" href="#">Find a Location</a></li>
-                <li><a class="dropdown-item" href="#">ER/Urgent Care</a></li>
-              </ul>
             </li>
 
-            <!-- Dropdown 2 -->
+            <!-- Dropdown -->
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -72,29 +65,16 @@
               </ul>
             </li>
 
-            <!-- Dropdown 3 -->
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                role="button"
-                data-bs-toggle="dropdown"
-                >Patient Tools</a
-              >
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Patient Portal</a></li>
-                <li><a class="dropdown-item" href="#">Pay my Bill</a></li>
-                <li><a class="dropdown-item" href="#">Medical Records</a></li>
-              </ul>
-            </li>
-
             <!-- About link -->
             <li class="nav-item">
               <a class="nav-link" href="#">About us</a>
             </li>
           </ul>
 
-          <!-- Button -->
-          <button class="btn btn-primary">Book an Appointment</button>
+          <!-- Darkmode Toggler -->
+          <div id="darkModeToggle" onclick="DarkMode()">
+            <span id="modeIcon">🌙</span> Dark Mode
+          </div>
         </div>
       </div>
     </nav>
@@ -106,19 +86,20 @@
     <!-- carousel hero section -->
 
     <div
-      id="vitality-hero"
+      id="site-hero"
       class="carousel slide"
       data-bs-ride="carousel"
-      data-bs-interval="6000"
+      data-bs-interval="5000"
+      id="hero-images"
     >
       <div class="carousel-indicators">
         <button
-          data-bs-target="#vitality-hero"
+          data-bs-target="#site-hero"
           data-bs-slide-to="0"
           class="active"
         ></button>
-        <button data-bs-target="#vitality-hero" data-bs-slide-to="1"></button>
-        <button data-bs-target="#vitality-hero" data-bs-slide-to="2"></button>
+        <button data-bs-target="#site-hero" data-bs-slide-to="1"></button>
+        <button data-bs-target="#site-hero" data-bs-slide-to="2"></button>
       </div>
 
       <!-- Carousel images section -->
@@ -135,7 +116,7 @@
             <p class="hero-desc">
               We offer 24/7 medical support for remote patients
             </p>
-            <button class="btn btn-primary" href="#">
+            <button class="btn btn-primary" href="mp2-book_appointment.html">
               Book and Appointment
             </button>
           </div>
@@ -152,7 +133,7 @@
             <p class="hero-desc">
               We give out online prescriptions to our clients
             </p>
-            <button class="btn btn-primary" href="#">
+            <button class="btn btn-primary" href="mp2-book_appointment.html">
               Book and Appointment
             </button>
           </div>
@@ -169,7 +150,7 @@
             <p class="hero-desc">
               We offer online consultations with our medical professionals
             </p>
-            <button class="btn btn-primary" href="#">
+            <button class="btn btn-primary" href="mp2-book_appointment.html">
               Book and Appointment
             </button>
           </div>
@@ -198,65 +179,85 @@
 
     <!-- END OF HERO SECTION -->
 
-    <!-- FOOTER SECTION -->
-    <footer class="footer">
-      <hr class="footer-divider" />
-      <!-- Divider -->
-
-      <div class="footer-container">
-        <!-- Section 1 -->
-        <div class="footer-section">
-          <h3>About Us</h3>
-          <a href="#">Our Company</a>
-          <a href="#">Our Team</a>
-          <a href="#">Careers</a>
+    <div class="container-fluid mt-5">
+      <div class="row">
+        <div class="col-lg-4 max-height-200">
+          <img src="img/laptop.jpg" alt="laptop" class="img-fluid rounded-4" />
         </div>
-
-        <!-- Section 2 -->
-        <div class="footer-section">
-          <h3>Learn More</h3>
-          <a href="#">FAQ</a>
-          <a href="#">Help Center</a>
-          <a href="#">Support</a>
-        </div>
-
-        <!-- Section 3 -->
-        <div class="footer-section">
-          <h3>Connect With Us</h3>
-          <ul class="social-icons">
-            <li>
-              <a href="#" aria-label="Follow us on Facebook"
-                ><img
-                  src="img/fb_logo.png"
-                  alt="Facebook icon"
-                  class="social-icon"
-              /></a>
-            </li>
-            <li>
-              <a href="#" aria-label="Follow us on Twitter"
-                ><img
-                  src="img/x_logo.webp"
-                  alt="Twitter icon"
-                  class="social-icon"
-              /></a>
-            </li>
-            <li>
-              <a href="#" aria-label="Follow us on Instagram"
-                ><img
-                  src="img/instagram_logo.png"
-                  alt="Instagram icon"
-                  class="social-icon"
-              /></a>
-            </li>
-          </ul>
-        </div>
-
-        <!-- App Store Links -->
-        <div class="app-stores">
-          <img src="img/app_store.png" alt="App Store" />
-          <img src="img/google_play.png" alt="Google Play" />
+        <div class="col-lg-8 fs-4">
+          Here at Vitality Book we pride ourselves with being the number 1
+          online healthcare provider to date, From the common cold to cancer we
+          have a medical professional who can help you!
+          <div>
+            <a href="#" class="btn btn-primary mt-5 fs-4">Learn More</a>
+          </div>
         </div>
       </div>
-    </footer>
+    </div>
+
+    <div class="container-fluid mt-5">
+      <div class="row">
+        <div class="col-lg-4 max-height-200">
+          <img
+            src="img/doctor_team.avif"
+            alt="doctors"
+            class="img-fluid rounded-4"
+          />
+        </div>
+        <div class="col-lg-8 fs-4">
+          Here at Vitality Book we have a wide array of medical proffesionals to
+          help you with any online medical assistance you need, so don't
+          hesitate to book an appointment now!
+          <div>
+            <a
+              href="mp2-book_appointment.html"
+              class="btn btn-primary mt-5 fs-4"
+              >Book an appointment</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid mt-5 ml-4 mr-4 text-center service">
+      <img
+        src="img/vit_book_logo.png"
+        alt="vitality book logo"
+        class="service-logo"
+      />
+      <h1 class="font-weight-bold">Our mission</h1>
+      <p>
+        Helping you find the best online medical care. Get help from our medical
+        professionals all from the comfort of your home.
+      </p>
+      <!-- Small logos to describe the service -->
+      <div class="d-flex justify-content-around mt-5">
+        <div class="text-center">
+          <img
+            src="img/stetoscope.png"
+            alt="stetoscope"
+            class="service-logo-1"
+          />
+          <p>
+            Ensuring we have the right medical professionals to meet your needs
+            at Vitality Book.
+          </p>
+        </div>
+        <div class="text-center">
+          <img src="img/clock.png" alt="clock" class="service-logo-1" />
+          <p>
+            Illness has no breaks, and neither do we! Open 24/7 for your
+            healthcare needs.
+          </p>
+        </div>
+        <div class="text-center">
+          <img src="img/checklist.png" alt="checklist" class="service-logo-1" />
+          <p>
+            Simplified booking and stress-free appointments, enhancing your
+            seamless healthcare journey.
+          </p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
