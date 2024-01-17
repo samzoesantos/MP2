@@ -9,10 +9,10 @@
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="CSS files/styles.css" />
-    <script src="JS files/primarycare.js"></script>
+    <link rel="stylesheet" href="CSS files/CSS-neurosciences.css" />
+    <script src="JS files/cancer_care.js"></script>
 
-    <title>Primary Care</title>
+    <title>Cancer Care</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light">
@@ -103,38 +103,40 @@
     <div class="container my-5">
       <!-- Header Section -->
       <div class="header-section text-center mb-4 p-4 bg-light border rounded">
-        <h1>Primary Care</h1>
+        <h1>Cancer Care</h1>
         <p>
-          Expert care, close to home. Vitality Book is a leading provider of
-          primary care.
-        </p>
-        <p>
-          From diagnosis to treatment and general wellness, our primary care
-          centers provide care and support throughout your healthcare journey.
+          At Vitality Book, we offer a leading-edge cancer care experience,
+          providing expert treatment and support right in your community. Our
+          cancer centers are dedicated to guiding you through every step of your
+          journey—from the moment of diagnosis to treatment and into
+          survivorship.
         </p>
       </div>
     </div>
-    <!-- Main Content -->
-    <div class="main-content">
-      <div class="row">
-        <!-- Column for Text -->
-        <div class="col-md-6">
-          <h2>Primary Care Network</h2>
-          <p>
-            The Primary Care Network is accredited by the Commission on Primary
-            Health as an Integrated Network Primary Program, and has network
-            facilities accredited by the National Accreditation Program for
-            Primary Health.
-          </p>
-        </div>
+     <!-- Main Content -->
+     <div class="main-content">
+        <div class="row">
+          <div class="col-md-6">
+            <h2>Cancer Care Network</h2>
+            <p>
+                Vitality Book, a pioneering telehealth platform, has established a
+                comprehensive Cancer Care Network, distinguished by its
+                accreditation from the Commission on Cancer as an Integrated Network
+                Cancer Program. This network boasts facilities that have earned
+                accreditation from the National Accreditation Program for Breast
+                Cancer, ensuring the highest standards of care and treatment.
+    
+            </p>
+          </div>
 
-        <!-- Column for Image -->
-        <div class="col-md-6">
-          <img
-            src="img/img/primary_care_doctor.jpeg"
-            alt="Primary Care Network Image"
-            class="img-fluid"
-          />
+          <!--Cancer Center Image -->
+          <div class="col-md-6">
+            <img
+              src="img/img/cancer_care.jpeg"
+              alt="Neurosciences"
+              class="img-fluid"
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -144,87 +146,12 @@
       <input
         type="text"
         id="locationInput"
-        placeholder="Primary Care Provider"
+        placeholder="Cancer Care Center Location"
       />
-      <button id="searchButton">Search</button>
-      <div id="feedback" style="display: none"></div>
+      <button id="findCancerCenter">Search</button>
+      <div id="centersList" style="display: none"></div>
     </div>
 
-    <div id="specialistList">
-      <div class="specialist" data-location="Boracy" style="display: none">
-        Dr. Jose Dela Cruz -<span class="location">Boracy</span>
-      </div>
-      <div class="specialist" data-location="Palawan" style="display: none">
-        Dr. Maria Santos - <span class="location">Palawan</span>
-      </div>
-      <div class="specialist" data-location="Cebu" style="display: none">
-        Dr. Juan Luna - <span class="location">Cebu</span>
-      </div>
-      <div class="specialist" data-location="Baguio" style="display: none">
-        Dr. Ana Reyes - <span class="location">Baguio</span>
-      </div>
-      <div class="specialist" data-location="Bohol" style="display: none">
-        Dr. Fernando Garcia - <span class="location">Bohol</span>
-      </div>
-      <div class="specialist" data-location="Siargao" style="display: none">
-        Dr. Luz Bautista - <span class="location">Siargao</span>
-      </div>
-      <div class="specialist" data-location="Vigan" style="display: none">
-        Dr. Antonio Rosario - <span class="location">Vigan</span>
-      </div>
-      <div class="specialist" data-location="Davao" style="display: none">
-        Dr. Sofia Mendoza - <span class="location">Davao</span>
-      </div>
-      <div class="specialist" data-location="Batanes" style="display: none">
-        Dr. Carlos Pascual - <span class="location">Batanes</span>
-      </div>
-      <div class="specialist" data-location="Coron" style="display: none">
-        Dr. Isabella Rizal - <span class="location">Coron</span>
-      </div>
-      <div class="specialist" data-location="El Nido" style="display: none">
-        Dr. Miguel Lopez - <span class="location">El Nido</span>
-      </div>
-      <div class="specialist" data-location="Manila" style="display: none">
-        Dr. Manuel Rodriguez - <span class="location">Manila</span>
-      </div>
-      <div class="specialist" data-location="Sagada" style="display: none">
-        Dr. Teresa Villanueva - <span class="location">Sagada</span>
-      </div>
-      <div class="specialist" data-location="Camiguin" style="display: none">
-        Dr. Ricardo Ocampo - <span class="location">Camiguin</span>
-      </div>
-      <div class="specialist" data-location="Tagaytay" style="display: none">
-        Dr. Julia Perez - <span class="location">Tagaytay</span>
-      </div>
-      <div class="specialist" data-location="Batangas" style="display: none">
-        Dr. Ernesto Navarro - <span class="location">Batangas</span>
-      </div>
-      <div class="specialist" data-location="Baybay" style="display: none">
-        Dr. Gabriela Silang - <span class="location">Baybay</span>
-      </div>
-      <div class="specialist" data-location="Borongan" style="display: none">
-        Dr. Andres Bonifacio - <span class="location">Borongan</span>
-      </div>
-      <div class="specialist" data-location="Cadiz" style="display: none">
-        Dr. Maricel Soriano - <span class="location">Cadiz</span>
-      </div>
-      <div class="specialist" data-location="Cotabato" style="display: none">
-        Dr. Ramon Aquino - <span class="location">Cotabato</span>
-      </div>
-      <div class="specialist" data-location="Dagupan" style="display: none">
-        Dr. Lourdes Medina - <span class="location">Dagupan</span>
-      </div>
-      <div class="specialist" data-location="Escalante" style="display: none">
-        Dr. Dante Gutierrez - <span class="location">Escalante</span>
-      </div>
-      <div
-        class="specialist"
-        data-location="General Santos"
-        style="display: none"
-      >
-        Dr. Patricia Santos - <span class="location">General Santos</span>
-      </div>
-    </div>
     <!-- FOOTER SECTION -->
     <footer class="footer">
       <hr class="footer-divider" />

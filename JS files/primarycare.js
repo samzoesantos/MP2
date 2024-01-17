@@ -3,8 +3,13 @@ $(document).ready(function () {
   $(".specialist").hide();
 
   $("#searchButton").click(function () {
-    var inputLocation = $("#locationInput").val().toLowerCase();
+    var inputLocation = $("#locationInput").val().trim().toLowerCase();
     var found = false;
+
+    if (inputLocation === "") {
+      // Optional: Display a message to enter a location or return
+      return;
+    }
 
     $(".specialist").each(function () {
       var specialistLocation = $(this).data("location").toLowerCase();
@@ -16,8 +21,13 @@ $(document).ready(function () {
       }
     });
 
-    if (!found || inputLocation === "") {
-      $(".specialist").hide(); // Hide all specialists if none found or input is empty
+    if (!found) {
+      // Optional: Display a message that no specialists were found
+      $("#feedback")
+        .show()
+        .text("No specialists found for " + inputLocation);
+    } else {
+      $("#feedback").hide();
     }
   });
 });
