@@ -25,27 +25,6 @@ $(document).ready(function () {
     { name: "Dr. Patricia Santos", location: "General Santos" },
   ];
 
-  specialists.forEach(function (specialist) {
-    var specialistElement = $(
-      '<div class="specialist" data-location="' +
-        specialist.location.toLowerCase() +
-        '" style="display: none">' +
-        specialist.name +
-        ' - <span class="location">' +
-        specialist.location +
-        "</span></div>"
-    );
-    $("#specialistList").append(specialistElement);
-  });
-
-  // Initially hide all specialists
-  $(".specialist").hide();
-
-  $("#searchButton").click(function () {
-    var inputLocation = $("#locationInput").val().trim().toLowerCase();
-    var found = false;
-
-    
     $(".specialist").each(function () {
       var specialistLocation = $(this).data("location");
       if (specialistLocation === inputLocation) {

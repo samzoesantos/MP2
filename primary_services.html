@@ -10,15 +10,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="CSS files/styles.css" />
+    <link rel="stylesheet" href="CSS files/CSS-Darkmode.css" />
     <script src="JS files/primarycare.js"></script>
+    <script src="JS files/darkmode.js"></script>
 
     <title>Primary Care</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg sticky-top">
       <div class="container-fluid">
         <!-- Logo -->
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
           <img
             src="img/img/vitality_book.png"
             alt="Vitality Book Logo"
@@ -39,22 +41,13 @@
         <!-- Hamburger Icon for responsiveness -->
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
-            <!-- Dropdown 1 -->
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                role="button"
-                data-bs-toggle="dropdown"
-                >Find Care</a
+            <!-- Meet out doctors link -->
+            <li class="nav-item">
+              <a class="nav-link" href="mp2-meet_our_doctors.html"
+                >Meet our Doctors</a
               >
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Find a Provider</a></li>
-                <li><a class="dropdown-item" href="#">Find a Location</a></li>
-                <li><a class="dropdown-item" href="#">ER/Urgent Care</a></li>
-              </ul>
             </li>
-
-            <!-- Dropdown 2 -->
+            <!-- Dropdown -->
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -63,38 +56,33 @@
                 >Medical Services</a
               >
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Primary Care</a></li>
-                <li><a class="dropdown-item" href="#">Cancer Care</a></li>
-                <li><a class="dropdown-item" href="#">Neurosciences</a></li>
                 <li>
-                  <a class="dropdown-item" href="#">More Health Services</a>
+                  <a class="dropdown-item" href="primary_services.html"
+                    >Primary Care</a
+                  >
                 </li>
-              </ul>
-            </li>
-
-            <!-- Dropdown 3 -->
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                role="button"
-                data-bs-toggle="dropdown"
-                >Patient Tools</a
-              >
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Patient Portal</a></li>
-                <li><a class="dropdown-item" href="#">Pay my Bill</a></li>
-                <li><a class="dropdown-item" href="#">Medical Records</a></li>
+                <li>
+                  <a class="dropdown-item" href="cancer_care.html"
+                    >Cancer Care</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="neurosciences.html"
+                    >Neurosciences</a
+                  >
+                </li>
               </ul>
             </li>
 
             <!-- About link -->
             <li class="nav-item">
-              <a class="nav-link" href="#">About us</a>
+              <a class="nav-link" href="about.html">About us</a>
             </li>
           </ul>
 
-          <!-- Button -->
-          <button class="btn btn-primary">Book an Appointment</button>
+          <div id="darkModeToggle" onclick="DarkMode()">
+            <span id="modeIcon">🌙</span> Dark Mode
+          </div>
         </div>
       </div>
     </nav>
@@ -138,7 +126,6 @@
         </div>
       </div>
     </div>
-
     <!-- Search Section -->
     <div class="search-section">
       <input

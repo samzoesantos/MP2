@@ -10,7 +10,14 @@ img {
   height: auto;
 }
 .navbar {
-  background-color: #add8e6;
+  background: linear-gradient(
+    to right,
+    #1477d2,
+    #1a8ae5,
+    #1e97f3,
+    #41a7f5,
+    #64b7f6
+  );
   font-size: 25px;
 }
 
@@ -37,7 +44,9 @@ img {
   align-items: center;
 }
 
-.navbar-nav .nav-link,
+.navbar-nav .nav-link:hover {
+  background: #add8e6;
+}
 .navbar-nav .dropdown-menu {
   white-space: nowrap;
   overflow: hidden;
@@ -137,7 +146,14 @@ img {
 }
 
 .footer {
-  background-color: #add8e6;
+  background: linear-gradient(
+    to right,
+    #1477d2,
+    #1a8ae5,
+    #1e97f3,
+    #41a7f5,
+    #64b7f6
+  );
   padding: 40px 0;
   color: #333;
   text-align: center;
