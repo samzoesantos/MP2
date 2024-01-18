@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="CSS files/CSS-navbar&fonts.css" />
     <link rel="stylesheet" href="CSS files/CSS-Darkmode.css" />
     <script src="JS files/darkmode.js"></script>
+    <script src="JS files/show_doctors-API.js"></script>
     <title>Meet Our Doctors</title>
   </head>
   <body>
@@ -108,8 +109,17 @@
     <div class="container-fluid text-center">
       <div class="row">
         <div class="col-lg-12">
-          <button class="btn btn-primary">See Full List of Doctors</button>
+          <button class="btn btn-primary" id="seeDoctors">
+            See Full List of Doctors
+          </button>
         </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <table class="table">
+          <tbody id="doctor_list"></tbody>
+        </table>
       </div>
     </div>
 
