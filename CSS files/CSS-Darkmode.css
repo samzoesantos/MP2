@@ -1,12 +1,11 @@
-body {
-  transition: background-color 1.5s;
-}
-
 .dark-mode {
   background-color: #222;
   color: #fff;
 }
 
-#darkModeToggle {
-  cursor: pointer;
+.dark-mode .navbar,
+.dark-mode .card,
+.dark-mode {
+  background-color: #333;
+  color: #ccc;
 }

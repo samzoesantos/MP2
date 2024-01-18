@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  // Specialist data
+  // Specialists data
   var specialists = [
     { name: "Dr. Jose Dela Cruz", location: "Boracay" },
     { name: "Dr. Maria Santos", location: "Palawan" },
@@ -25,9 +25,34 @@ $(document).ready(function () {
     { name: "Dr. Patricia Santos", location: "General Santos" },
   ];
 
+  // Dynamically create specialist elements
+  specialists.forEach(function (specialist) {
+    var specialistDiv = $("<div>", {
+      class: "specialist",
+      "data-location": specialist.location,
+      style: "display: none",
+    })
+      .text(specialist.name + " - ")
+      .append(
+        $("<span>", {
+          class: "location",
+        }).text(specialist.location)
+      );
+
+    $("#specialistList").append(specialistDiv);
+  });
+
+  $("#searchButton").click(function () {
+    var inputLocation = $("#locationInput").val().trim().toLowerCase();
+    var found = false;
+
+    if (inputLocation === "") {
+      return;
+    }
+
     $(".specialist").each(function () {
-      var specialistLocation = $(this).data("location");
-      if (specialistLocation === inputLocation) {
+      var specialistLocation = $(this).data("location").toLowerCase();
+      if (specialistLocation.includes(inputLocation)) {
         $(this).show();
         found = true;
       } else {
@@ -36,7 +61,11 @@ $(document).ready(function () {
     });
 
     if (!found) {
-      alert("No specialists found for this location.");
+      $("#feedback")
+        .show()
+        .text("No specialists found for " + inputLocation);
+    } else {
+      $("#feedback").hide();
     }
   });
 });
