@@ -197,8 +197,8 @@ img {
   display: flex;
   justify-content: center;
   list-style-type: none;
-  height: 15px; /* This will maintain the aspect ratio of the icons */
-  margin: 0 10px; /* Optional: Adjusts spacing around each icon */
+  height: 15px;
+  margin: 0 10px;
 }
 
 .social-icons li {
@@ -215,7 +215,6 @@ img {
   margin: 0 5px;
 }
 
-/* Additional Hover Effects */
 .footer-section a:hover,
 .social-icons li:hover,
 .app-stores img:hover {
